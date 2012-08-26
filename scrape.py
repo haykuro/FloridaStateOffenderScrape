@@ -1,6 +1,10 @@
+"""
+    Written by Steve Birstok (http://www.stevebirstok.com)
+"""
+
 ### IMPORTS ###
 # regular expressions
-import re
+# import re
 # os path functions
 import os
 # md5 sums
@@ -134,6 +138,8 @@ class Main():
             if info > 0:
                 inmates.append(inmate)
         print str(len(inmates)) + ' inmates loaded.'
+        for inmate in inmates:
+            print inmate
         return None
 
 
